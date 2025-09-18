@@ -1,0 +1,73 @@
+{
+  "app": {
+    "base_language": "en",
+    "push": {
+      "source": [
+        {
+          "path": "./AndroidXML/en/en_strings.xml",
+          "file_format": "android_xml",
+          "tag": "core_xml",
+          "key_prefix": "appstrings_",
+          "language": "en"
+        },
+        {
+          "path": "./ReactJSON/en/en.json",
+          "file_format": "react_simple_json",
+          "tag": "core_json",
+          "key_prefix": "core_",
+          "language": "en"
+        },
+        {
+          "path": "./CSV/en/table_en.csv",
+          "file_format": "csv",
+          "tag": "csv",
+          "columnDescription": {
+            "KEY": 0,
+            "en": 1
+          },
+          "excludeHeaderRow": false,
+          "key_prefix": "billing_",
+          "language": "en"
+        }
+      ]
+    },
+    "pull": {
+      "target": [
+        {
+          "path": "./AndroidXML/en/<language>.xml",
+          "file_format": "android_xml",
+          "tag": "core_xml",
+          "key_prefix": "appstrings_",
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./ReactJSON/en/<language>.json",
+          "file_format": "react_simple_json",
+          "tag": "core_json",
+          "key_prefix": "core_",
+          "export_empty": true,
+          "exclude_languages": [
+            "en"
+          ]
+        },
+        {
+          "path": "./CSV/en/<language>.csv",
+          "file_format": "csv",
+          "tag": "csv",
+          "excludeHeaderRow": true,
+          "excludeBaseLang": true,
+          "columnDescription": {
+            "KEY": 0,
+            "<language>": 1
+          },
+          "key_prefix": "billing_",
+          "exclude_languages": [
+            "en"
+          ]
+        }
+      ]
+    }
+  }
+}
