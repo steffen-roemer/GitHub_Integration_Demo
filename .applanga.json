@@ -25,7 +25,7 @@
             "KEY": 0,
             "en": 1
           },
-          "excludeHeaderRow": false,
+          "excludeHeaderRow": true,
           "key_prefix": "billing_",
           "language": "en"
         }
@@ -34,7 +34,7 @@
     "pull": {
       "target": [
         {
-          "path": "./AndroidXML/en/<language>.xml",
+          "path": "./AndroidXML/<language>/<language>_strings.xml",
           "file_format": "android_xml",
           "tag": "core_xml",
           "key_prefix": "appstrings_",
@@ -43,7 +43,7 @@
           ]
         },
         {
-          "path": "./ReactJSON/en/<language>.json",
+          "path": "./ReactJSON/<language>/<language>.json",
           "file_format": "react_simple_json",
           "tag": "core_json",
           "key_prefix": "core_",
@@ -53,7 +53,7 @@
           ]
         },
         {
-          "path": "./CSV/en/<language>.csv",
+          "path": "./CSV/<language>/table_<language>.csv",
           "file_format": "csv",
           "tag": "csv",
           "excludeHeaderRow": true,
