@@ -1,0 +1,27 @@
+{
+  "app": {
+    "base_language": "en",
+    "push": {
+      "source": [
+        {
+          "path": "./ReactJSON/en/en.json",
+          "file_format": "react_nested_json",
+          "tag": "app:language:9035.json",
+          "language": "en"
+        }
+      ]
+    },
+    "pull": {
+      "target": [
+        {
+          "path": "./ReactJSON/<language>/file.json",
+          "file_format": "react_nested_json",
+          "tag": "app:language:9035.json",
+          "exclude_languages": [
+            "en"
+          ]
+        }
+      ]
+    }
+  }
+}
