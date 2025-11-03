@@ -20,6 +20,14 @@
           "exclude_languages": [
             "en"
           ]
+        },
+        {
+          "path": "./ReactJSON/<language>/product.json",
+          "file_format": "react_nested_json",
+          "tag": "product.json",
+          "exclude_languages": [
+            "en"
+          ]
         }
       ]
     }
