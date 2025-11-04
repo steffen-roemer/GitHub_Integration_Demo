@@ -8,12 +8,6 @@
           "file_format": "react_nested_json",
           "tag": "app:language:9035.json",
           "language": "en"
-        },
-        {
-          "path": "./ReactJSON/en/product.json",
-          "file_format": "react_nested_json",
-          "tag": "product.json",
-          "language": "en"
         }
       ]
     },
@@ -23,14 +17,6 @@
           "path": "./ReactJSON/<language>/file.json",
           "file_format": "react_nested_json",
           "tag": "app:language:9035.json",
-          "exclude_languages": [
-            "en"
-          ]
-        },
-        {
-          "path": "./ReactJSON/<language>/product.json",
-          "file_format": "react_nested_json",
-          "tag": "product.json",
           "exclude_languages": [
             "en"
           ]
